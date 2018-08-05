@@ -75,5 +75,14 @@ Here is a sample from 'dbpedia_train_answers.json':
 ```
 
 ## Input
+Here is the evaluator's input format:
 
-
+||| Description|Type|Required|default|
+|:----|:----|:----|:----|:----|:----|
+|language||Question's id|string or number|O|
+|data_url||Language of natural language question|string|O|
+|data||Natural language question|string|O|
+|config|address|The gold answer you can get with the gold sparql|list|O|
+|sequence||type of the answer|string|X|
+|timelimit||The gold sparql to get the gold answer|string|X|
+|n||a|a|a|
